@@ -197,7 +197,7 @@
     display: flex;
     width: 1249px;
     margin: 0 auto;
-    padding: 107px 0 90px;
+    padding: 100px 0 55px;
     border-bottom: 2px solid #ECECEC;
     justify-content: space-between;
 }
@@ -208,7 +208,7 @@
 
 .services__heading {
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     font-family: 'Open Sans';
     font-size: 42px;
     font-weight: 700;
@@ -219,7 +219,7 @@
 
 .services__about {
     margin: 0;
-    margin-bottom: 64px;
+    margin-bottom: 55px;
     font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 400;
@@ -229,21 +229,21 @@
 .services__items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: inherit;
     gap: 13px;
     width: 610px;
 }
 
 .services__item {
-    width: 285px;
-    margin-bottom: 53px;
+    width: 286px;
+    margin-bottom: 15px;
 }
 
 .services__item_icon_management::before {
     content: '';
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-image: url('../img/icon-Managment.svg');
     background-repeat: no-repeat;
     margin-bottom: 33px;
@@ -252,8 +252,8 @@
 .services__item_icon_design::before {
     content: '';
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-image: url('../img/icon-UI.UX.Design.svg');
     background-repeat: no-repeat;
     margin-bottom: 33px;
@@ -262,8 +262,8 @@
 .services__item_icon_branding::before {
     content: '';
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-image: url('../img/icon-Logo.Branding.svg');
     background-repeat: no-repeat;
     margin-bottom: 33px;
@@ -272,8 +272,8 @@
 .services__item_icon_animation::before {
     content: '';
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-image: url('../img/icon-Animation.svg');
     background-repeat: no-repeat;
     margin-bottom: 33px;
@@ -293,4 +293,91 @@
     font-family: 'Open Sans';
     font-size: 16px;
     line-height: 28px;
+}
+
+/* Featuries */
+.feature {
+    width: 1249px;
+    margin: 0 auto;
+    padding: 100px 0 65px;
+}
+
+.feature__header {
+    margin-bottom: 88px;
+}
+
+.feature__heading {
+    margin: 0;
+    margin-bottom: 15px;
+    font-family: 'Open Sans';
+    font-size: 41.9876px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.3834px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.feature__about {
+    width: 537px;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    font-family: 'Open Sans';
+    font-size: 15.9953px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.feature__line {
+    width: 130px;
+    height: 2px;
+    background-color: rgba(255, 45 ,45, 1);
+    border: none;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 58px;
+}
+
+.filter__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: 
+    wrap;gap: 57px;
+}
+
+.filter__link {
+    font-family: 'Open Sans';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.22px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.filter__link_active {
+    color: #FF2D2D;
+}
+
+.filter__link:hover {
+    color: #FF2D2D;
+}
+
+.feature__products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature__product {
+    width: 297px;
+    object-fit: cover;
+    object-position: 20% 70%;
 }

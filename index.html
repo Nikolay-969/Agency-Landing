@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/popup-menu.js"></script>
 </head>
 
 <body class="page">
@@ -21,8 +22,18 @@
                     <li class="site-menu__item"><a class="site-menu__link site-menu__link_active" href="#">Home</a></li>
                     <li class="site-menu__item"><a class="site-menu__link" href="#feature">Portfolio</a></li>
                     <li class="site-menu__item"><a class="site-menu__link" href="#team">About us</a></li>
-                    <li class="site-menu__item"><a class="site-menu__link" href="">Contact</a></li>
+                    <li class="site-menu__item"><a class="site-menu__link" href="#feedback">Contact</a></li>
                 </ul>
+            </nav>
+            <nav class="popup-menu">
+                <button class="popup-menu__button"></button>
+                <ul class="popup-menu__list hide">
+                    <li class="popup-menu__item"><a class="popup-menu__link popup-menu__link_active" href="#">Home</a></li>
+                    <li class="popup-menu__item"><a class="popup-menu__link" href="#feature">Portfolio</a></li>
+                    <li class="popup-menu__item"><a class="popup-menu__link" href="#team">About us</a></li>
+                    <li class="popup-menu__item"><a class="popup-menu__link" href="#feedback2">Contact</a></li>
+                </ul>
+
             </nav>
         </header>
     </div>
@@ -160,7 +171,7 @@
         <section class="feedback">
             <div class="feedback__header">
                 <div class="fedback__inner">
-                    <h2 class="feedback__heading" id="touch">Get in touch</h2>
+                    <h2 class="feedback__heading" id="feedback">Get in touch</h2>
                     <p class="feedback__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
                     <hr class="hor-line hor-line_left">
                 </div>
@@ -173,7 +184,7 @@
                     <button class="feedback__button" type="submit">Send message</button>
                 </form>
                 <section class="feedback__contacts contacts">
-                    <h3 class="contacts__heading">Contact info</h3>
+                    <h3 class="contacts__heading" id="feedback2">Contact info</h3>
                     <address class="contacts__address">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bangladesh</address>
                     <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
                     <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>

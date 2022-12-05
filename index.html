@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Agency Landing</title>
+    <link rel="icon" href="img/icon-UI.UX.Design.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/popup-menu.js"></script>
@@ -33,7 +33,6 @@
                     <li class="popup-menu__item"><a class="popup-menu__link" href="#team">About us</a></li>
                     <li class="popup-menu__item"><a class="popup-menu__link" href="#feedback2">Contact</a></li>
                 </ul>
-
             </nav>
         </header>
     </div>
@@ -46,8 +45,7 @@
                     <a class="action-link action-link_red-full" href="">Contact Us</a>
                 </div>
                 <video class="intro__video" controls muted autoplay loop poster="img/intro-video.jpg">
-                    <source src="video/business178.mp4" type="video/mp4">
-                Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="video/business178.mp4">download it</a>and watch it with your favorite video player!
+                    <source src="video/business178.mp4" type="video/mp4"> Sorry, your browser doesn't support embedded videos, but don't worry, you can <a href="video/business178.mp4">download it</a>and watch it with your favorite video player!
                 </video>
             </section>
         </div>
@@ -82,41 +80,28 @@
                 <p class="feature__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit,sed do eiusmod tempor incididunt ut labore et.</p>
                 <hr class="hor-line hor-line_center">
             </div>
-            <div class="filter">
-                <ul class="filter__list">
-                    <li class="filter__item">
-                        <a class="filter__link filter__link_active" href="#">All</a>
-                    </li>
-                    <li class="filter__item">
-                        <a class="filter__link" href="#">Print template</a>
-                    </li>
-                    <li class="filter__item">
-                        <a class="filter__link" href="#">Web template</a>
-                    </li>
-                    <li class="filter__item">
-                        <a class="filter__link" href="#">User interface</a>
-                    </li>
-                    <li class="filter__item">
-                        <a class="filter__link" href="#">Mock-up</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="feature__products">
-                <img width="300" height="293" src="img/mock-up_1.jpg" alt="верстка приложения" class="feature__product">
-                <img width="300" height="293" src="img/print_template_1.jpg" alt="верстка приложения"
-                class="feature__product">
-                <img width="300" height="293" src="img/user_interface_1.jpg" alt="верстка приложения"
-                class="feature__product">
-                <img width="300" height="293" src="img/web_template_1.jpg" alt="верстка приложения"
-                class="feature__product">
-                <img width="300" height="293" src="img/mock-up_2.jpg" alt="верстка приложения" class="feature__product">
-                <img width="300" height="293" src="img/print_template_2.jpg" alt="верстка приложения"
-                class="feature__product">
-                <img width="300" height="293" src="img/user_interface_2.jpg" alt="верстка приложения"
-                class="feature__product">
-                <img width="300" height="293" src="img/web_template_2.jpg" alt="верстка приложения"
-                class="feature__product">
-            </div>
+            <div class="container">
+                <input class="checkbox-all" id="all" type="radio" name="checkbox" checked=""/>
+                <label class="checkbox-red" for="all">All</label>
+                <input class="checkbox-pt" id="pt" type="radio" name="checkbox"/>
+                <label class="checkbox-red" for="pt">Print teample</label>
+                <input class="checkbox-wt" id="wt" type="radio" name="checkbox"/>
+                <label class="checkbox-red" for="wt">Web template</label>
+                <input class="checkbox-ui" id="ui" type="radio" name="checkbox"/>
+                <label class="checkbox-red" for="ui">User interface</label>
+                <input class="checkbox-mu" id="mu" type="radio" name="checkbox"/>
+                <label class="checkbox-red" for="mu">Mock-up</label>
+                <div class="cards">
+                    <img class="project mu" width="299" height="293" src="img/mock-up_1.jpg" alt="">
+                    <img class="project pt" width="299" height="293" src="img/print_template_2.jpg" alt="">
+                    <img class="project wt" width="299" height="293" src="img/web_template_1.jpg" alt="">
+                    <img class="project ui" width="299" height="293" src="img/user_interface_2.jpg" alt="">
+                    <img class="project ui" width="299" height="293" src="img/user_interface_1.jpg" alt="">
+                    <img class="project wt" width="299" height="293" src="img/web_template_2.jpg" alt="">
+                    <img class="project pt" width="299" height="293" src="img/print_template_1.jpg" alt="">
+                    <img class="project mu" width="299" height="293" src="img/mock-up_2.jpg" alt="">
+                </div>
+              </div>
         </section>
         <section class="team">
             <div class="team__header">
